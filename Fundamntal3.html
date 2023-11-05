@@ -1,30 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilo.css">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fundamentales.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Fundamental 3</title>
     <style>
-        body{
-            background-color: #2a8c4a;
-        }
+      body {
+        background-color: #2a8c4a;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="http://127.0.0.1:5501/Index.html">Inicio</a>
-            <a href="http://127.0.0.1:5501/Fundamental1.html">Sección 1</a>
-            <a href="http://127.0.0.1:5501/Fundamental2.html">Sección 2</a>
-            <a href="http://127.0.0.1:5501/Fundamntal3.html">Sección 3</a>
-            <a href="http://127.0.0.1:5501/Funtament4.html">Sección 4</a>
-            <a href="http://127.0.0.1:5501/Acercade.html">Acerca de</a>
-        </nav>
+      <nav class="nav">
+        <a href="Index.html">Inicio</a>
+        <a href="http://127.0.0.1:5501/Fundamental1.html">Sección 1</a>
+        <a href="http://127.0.0.1:5501/Fundamental2.html">Sección 2</a>
+        <a href="http://127.0.0.1:5501/Fundamntal3.html" class="link-active"
+          >Sección 3</a
+        >
+        <a href="http://127.0.0.1:5501/Funtament4.html">Sección 4</a>
+        <a href="http://127.0.0.1:5501/Acercade.html">Acerca de</a>
+        <a
+          href="/archivos/Fundamentales.zip"
+          download="Fundamentales"
+          class="download_button"
+          ><span class="material-symbols-outlined download_icon">
+            download </span
+          >Descargar</a
+        >
+      </nav>
     </header>
-    <div class="seccion1">        
-        <center><h1>¿Cómo ocurre la concurrencia dentro de Android 10?</h1></center>
-    </div>
-    
-</body>
+
+    <center>
+      <div class="concurrencia">
+        <div class="seccion1">
+          <center>
+            <h1 class="titulo1">Almacenaje, Memoria y Archivos</h1>
+          </center>
+        </div>
+
+        <div class="seccion2">
+          <div>
+            <h1 class="titulo2">
+              ¿Qué tipos de memorias y sistemas de archivos manejan y cómo
+              operan?
+            </h1>
+            <p class="p2 p-edited" style="text-align: justify">
+              Los dispositivos Android cuentan con tres tipos de memoria: RAM,
+              zRAM y de almacenamiento. La RAM es la más rápida pero tiene un
+              tamaño limitado. Los dispositivos de alta gama suelen tener más
+              RAM. La zRAM es una partición de la RAM utilizada como espacio de
+              intercambio. El almacenamiento contiene datos persistentes como el
+              sistema de archivos y el código de aplicaciones.
+            </p>
+
+            <h1 class="titulo3">Tipos de Memoria Caché</h1>
+            <ul class="list_text-s2">
+              <li>
+                <span class="bold">Privada:</span>
+                Propiedad de un proceso y no se comparte.
+              </li>
+              <li>
+                <span class="bold">Compartida:</span>
+                Utilizada por varios procesos.
+              </li>
+              <li>
+                <span class="bold">Anónima:</span>
+                No respaldada por un archivo en el almacenamiento.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="interfazusuario">
+          <div>
+            <h1 class="iuxtitle">Sistemas de Archivos en Android</h1>
+            <ul class="list_text">
+              <li>
+                <span class="bold">Almacenamiento Específico de la App:</span>
+                Para archivos exclusivos de la app.
+              </li>
+              <li>
+                <span class="bold">Almacenamiento Compartido:</span>
+                Para archivos que la app comparte con otras.
+              </li>
+              <li>
+                <span class="bold">Preferencias:</span>
+                Para datos primitivos y privados en pares clave-valor.
+              </li>
+              <li>
+                <span class="bold">Bases de Datos:</span>
+                Para datos estructurados en una base de datos privada.
+              </li>
+            </ul>
+          </div>
+          <!-- IMAGEN PARA EDITAR -->
+          <!-- <img class="interfazux" src="img/interfazux.jpg" />  -->
+        </div>
+
+        <div class="api">
+          <h1 class="apititle">Operación de los archivos</h1>
+          <p class="p5 p-edited" style="text-align: justify">
+            Cada archivo y directorio en el sistema tiene permisos de acceso que
+            determinan quién puede leer, escribir o ejecutarlos.
+          </p>
+        </div>
+
+        <div class="composicion">
+          <h1 class="compotitle">Tipos de Sistemas de Archivos</h1>
+          <ul class="list_text-s2">
+            <li>
+              <span class="bold">EXT4 (Extended File System): </span>
+              Maneja grandes volúmenes de datos y archivos. Es óptimo para
+              discos duros de alta capacidad y velocidad, y cuenta con
+              características avanzadas de seguridad y recuperación de datos.
+            </li>
+            <li>
+              <span class="bold">VFAT:</span>
+              Utilizado en algunos dispositivos Android para formatear
+              almacenamiento externo, como una tarjeta SD. Permite almacenar
+              archivos de más de 4GB.
+            </li>
+          </ul>
+        </div>
+
+        <div class="composicion">
+          <h1 class="compotitle">
+            Importancia de la Administración de Memoria en Dispositivos Android
+          </h1>
+          <br />
+          <ul class="list_text-circle">
+            <li>
+              <span class="bold">Rendimiento del Sistema:</span>
+              Asegura operación rápida y fluida.
+            </li>
+            <li>
+              <span class="bold"
+                >Multitarea y Rendimiento de Aplicaciones:
+              </span>
+              Permite ejecutar múltiples aplicaciones eficientemente.
+            </li>
+            <li>
+              <span class="bold">Optimización de Recursos: </span>
+              Adapta el sistema a diferentes capacidades de hardware.
+            </li>
+            <li>
+              <span class="bold">Evitar Cierres Inesperados: </span>
+              Previene cierres forzados de aplicaciones.
+            </li>
+            <li>
+              <span class="bold">Prevención de Agotamiento de Recursos: </span>
+              Evita errores y bloqueos por falta de memoria.
+            </li>
+            <li>
+              <span class="bold">Ahorro de Energía: </span>
+              Optimiza el consumo de batería.
+            </li>
+          </ul>
+        </div>
+
+        <br /><br /><br />
+        <div class="composicion">
+          <h1 class="compotitle">
+            Problemas Comunes en la Administración de Memoria
+          </h1>
+          <ul class="list_text-s2">
+            <li>
+              <span class="bold">Falta de Memoria (Out of Memory):</span>
+              Insuficiente RAM para las aplicaciones.
+            </li>
+            <li>
+              <span class="bold">Fugas de Memoria (Memory Leaks): </span>
+              No se libera memoria no utilizada.
+            </li>
+            <li>
+              <span class="bold"
+                >Exceso de Consumo de RAM por Aplicaciones:</span
+              >
+              Aplicaciones mal optimizadas
+            </li>
+            <li>
+              <span class="bold"
+                >Ciclo de Vida Inadecuado de Aplicaciones:</span
+              >
+              Aplicaciones consumen recursos innecesarios en segundo plano.
+            </li>
+            <li>
+              <span class="bold">Problemas con la Gestión de la Caché:</span>
+              Uso ineficiente de la memoria caché.
+            </li>
+            <li>
+              <span class="bold">Conflicto entre Aplicaciones:</span>
+              Competencia por los mismos recursos de memoria.
+            </li>
+            <li>
+              <span class="bold"
+                >Problemas con Versiones de Android y Dispositivos Variados:
+              </span>
+              Comportamientos diferentes según la versión y hardware.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </center>
+  </body>
 </html>
