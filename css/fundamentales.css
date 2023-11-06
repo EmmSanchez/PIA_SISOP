@@ -14,12 +14,12 @@
    box-sizing: border-box;
 }
 body{
-   font-family: 'Open Sans';
+   font-family: 'Montserrat', sans-serif;
 }
 
 /* Navegadr */
 header{
-   /* background-color: #f2f2f2; */
+   background-color: #fff;
    text-align: center;
    padding: 15px 20px;
 }
@@ -93,7 +93,6 @@ nav a:hover{
   transition: all 400ms ease;
 }
 .carta2{
-  height: 200px;
   margin: 20px;
   border-radius: 6px;
   overflow: hidden;
@@ -144,12 +143,11 @@ nav a:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 900px;
-  margin: 10px;
+  width: 100%;
   border-radius: 4px;
   overflow: hidden;
   background: rgb(255, 255, 255);
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.646);
+  /* box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.646); */
   cursor: default;
 }
 .concurrencia:hover{
@@ -159,6 +157,8 @@ nav a:hover{
 
 .container{
   display: flex;
+  justify-content: left;
+  padding: 0 18rem;
 }
 img, p{
   padding: 10px;
@@ -179,11 +179,39 @@ img, p{
 }
 .interfazux2{
   border-radius: 20%;
+  height: 100%;
+  width: 12rem;
+  /* margin-left: 40%; */
 }
+
+.interfazux3{
+  border-radius: 20%;
+  margin-right: 40%;
+}
+
+.interfazux5{
+  border-radius: 20%;
+  
+}
+.interfazux6{
+  border-radius: 20%;
+  margin-bottom: 5%;
+  height: 20%;
+  
+}
+.interfazux7{
+  height: 25%;
+  border-radius: 10%;
+  
+}
+
 .list_text, .list_text-s2, .list_text-circle{
   margin: 2rem 0;
   text-align: left;
   list-style: decimal;
+}
+.list_text li {
+  margin: .5rem 0;
 }
 .list_text-s2{
   margin-left: 10rem;
@@ -193,9 +221,137 @@ img, p{
   font-weight: bold;
 }
 .p-edited{
-  margin: 0rem 6rem;
+  margin: 2rem 0;
 }
 .list_text-circle{
   margin: 0 6rem;
   list-style: disc;
+}
+
+/*añadio german la siguiente seccion*/
+.seccion1{
+  background-color: #2a8c4a;
+  text-align: justify;
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 5%;
+  
+}
+.titulo1{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.p1{
+  padding: 0% 0%;
+}
+.kernel{
+  margin-left: 33%;
+  border-radius: 15%;
+  width: 400px;
+  height: 300px;
+}
+.seccion2{
+  background-color: #d0fdd7;
+  text-align: justify;
+  color: #2a8c4a;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 5%;
+  
+}
+.titulo2,.titulo3{
+  color: #2a8c4a;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 5%;
+}
+
+.interfazusuario{
+  display: flex;
+  background-color: #64c27b;
+  text-align: justify;
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 5%;
+}
+.iuxtitle{
+  text-align: center;
+}
+div{
+  padding: 4.5%;
+}
+
+.interfazux{
+  height: 500px;
+  width: 800px;
+  border-radius: 10%;
+  margin-left: 12%;
+}
+.interfazux4{
+  height: 500px;
+  width: 800px;
+  border-radius: 10%;
+  margin-left: auto;
+  margin-top: 5%;
+}
+
+.api{
+  background-color: #d0fdd7;
+  text-align: justify;
+  color: #2a8c4a;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 5%;
+}
+
+.apititle{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.p5{
+  padding: 0% 20%;
+}
+
+.composicion{
+  background-color: #64c27b;
+  text-align: justify;
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 15%;
+  padding-top: 1%;
+  padding-bottom: 1%; 
+}
+
+.compotitle{
+  text-align: center;
+}
+/*termina seccion añadida por german*/
+.composicion-1{
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/*Fundamental 3 ediciones*/
+.memory_types{
+  width: 50%;
+}
+.seccion2-f3{
+  text-align: center;
+}
+.memory_admin, .memory_problems{
+  width: 20rem;
+  border-radius: 1rem;
+}
+.memory_problems{
+  margin-left: 30%;
 }
