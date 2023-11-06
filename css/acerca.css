@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+/* COLORES 
+   #003817
+   #026842
+   #009d71
+   #5ccda7
+   #98ffe0
+*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: 'Montserrat', sans-serif;
+}
+
+/* Navegadr */
+header{
+   /* background-color: #f2f2f2; */
+   text-align: center;
+   padding: 15px 20px;
+}
+.nav{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+nav a{
+   text-decoration: none;
+   color: #181717;
+   margin: 0 10px;
+   padding: 10px 25px;
+   font-size: 1.4em;
+}
+nav a:hover{
+   background-color:#003817;
+   color: #fff;
+   border-radius: 5px;
+   transition: all .2s;
+}
+.link-active{
+   background-color:#003817;
+   color: #fff;
+   border-radius: 5px;
+   transition: all .2s;
+}
+.download_button{
+   background-color: #98ffe0;
+   display: flex;
+   gap: .6rem;
+   align-items: center;
+   box-shadow: 4px 4px #003817;
+}
+.download_button:hover{
+   border-radius: 0;
+   background-color: #cff1e7;
+   color: #181717;
+}
+.download_button:active {
+   transform: translate(3px, 3px);
+   box-shadow: 0px 0px #003817;
+}
+
+/* CARTAS DEL EQUIPO*/
+.container-title{
+  text-align: center;
+  margin-top: 4rem;
+  font-weight: bold;
+}
+.cartas_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.carta{
+  width: min-content;
+  overflow: hidden;
+  /* box-shadow: 0px 1px 10px rgba(0,0,0,0.2); */
+}
+.carta-image{
+  border-radius: .4rem;
+  height: 25rem;
+}
+.contenido{
+  padding: .5rem;
+}
+.parrafo{
+  margin-top: .5rem;
+}
+.image-down{
+  margin-top: 1.5rem;
+}
+
+/* Bibliography */
+.biblio_container{
+  /* background-color: aqua; */
+  margin-top: 4rem;
+  margin: 4rem 13rem;
+}
+.biblio-title{
+  margin-bottom: 2rem 0 0 0;
+}
+.biblio-subtitle{
+   margin: 2rem 0 2rem 0;
+}
+.biblio-list{
+   list-style: none;
+}
+.list-item{
+   margin-top: .5rem;
+}
+.list-link{
+   text-decoration: none;
+   color: blue;
+}
