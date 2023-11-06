@@ -311,3 +311,30 @@ img, p{
 .interfazux2{
    border-radius: 20%;
 }
+
+/* Conclusiones */
+.conclusiones{
+   margin-top: 2rem;
+}
+.conclusion_title{
+   text-align: center;
+}
+.conclusion_grupal{
+   background: rgb(255,255,255);
+   background: linear-gradient(301deg, rgba(255,255,255,1) 0%, rgba(0,3,1,1) 0%, rgba(2,104,66,1) 59%);
+   /* margin: 0 5rem; */
+   padding: 2rem 5rem;
+   color: #fff;
+}
+.conclusiones_wrapper{
+   margin: 5rem 10rem;
+}
+.conclusion_int{
+   text-align: center;
+}
+.conclusion{
+   margin-top: 2rem;
+}
+.conclusion_text{
+   text-align: justify;
+}
