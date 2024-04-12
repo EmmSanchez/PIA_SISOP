@@ -13,11 +13,6 @@
       rel="stylesheet"
     />
     <title>Fundamental 4</title>
-    <style>
-      body {
-        background-color: #2a8c4a;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -28,51 +23,46 @@
         <a href="Fundamntal3.html">Sección 3</a>
         <a href="Funtament4.html" class="link-active">Sección 4</a>
         <a href="Acercade.html">Acerca de</a>
-        <!-- <a
-          href="/archivos/Fundamentales_EQUIPO1.zip"
-          download="Fundamentales"
-          class="download_button"
-          ><span class="material-symbols-outlined download_icon">download</span
-          >Descargar</a
-        > -->
       </nav>
     </header>
 
-    <center>
-      <div class="concurrencia">
-        <div class="seccion1">
-          <center><h1>Redes y seguridad en Android 10</h1></center>
-        </div>
-        <h2>Amenazas en el sistema operativo</h2>
-        <p style="text-align: justify">
-          Android 10 es uno de los sistemas operativos con mayor seguridad ante
-          amenazas móviles, pero aun así no significa que sean invulnerables, ya
-          que siguen existiendo amenazas de tipo. <br /><br />
-        </p>
+    <section class="section-download">
+      <div class="download-wrapper">
+        <h1>Descargar Fundamental 4</h1>
+        <a
+          href="/archivos/Fundamental4 E2 Ciberseguridad.pdf"
+          download="Fundamental_4"
+          class="download_button"
+          ><span class="material-symbols-outlined download_icon">
+            download </span
+          >Descargar</a
+        >
+      </div>
+    </section>
 
-        <div class="container">
-          <img
-            class="interfazux2"
-            src="F4_1.jpg"
-            alt=""
-            width="100"
-            height="80"
-          />
-          <p style="text-align: justify">
+    <div class="container">
+      <div>
+        <h1 class="title">Redes y seguridad en Android 10</h1>
+      </div>
+      <h2>Amenazas en el sistema operativo</h2>
+      <p class="f4_desc">
+        Android 10 es uno de los sistemas operativos con mayor seguridad ante
+        amenazas móviles, pero aun así no significa que sean invulnerables, ya
+        que siguen existiendo amenazas de tipo.
+      </p>
+
+      <div class="list-amenazas">
+        <div class="amenaza">
+          <img src="F4_1.jpg" alt="" class="amenaza_img" />
+          <p>
             Malware dirigido a la banca: la mayoría de ellos de tipo troyano, ya
             que en la actualidad la mayoría de personas hacen movimientos
             bancarios a través de sus móviles.
           </p>
         </div>
-        <div class="container">
-          <img
-            class="interfazux2"
-            src="F4_2.jpg"
-            alt=""
-            width="100"
-            height="90"
-          />
-          <p style="text-align: justify">
+        <div class="amenaza">
+          <img src="F4_2.jpg" alt="" class="amenaza_img" />
+          <p>
             Ransomware móvil: Con el rendimiento mejorado de los dispositivos
             móviles, los creadores de malware aprovecharon esto para
             “bloquear/secuestrar” los datos de los usuarios como documentos,
@@ -80,16 +70,10 @@
             recuperar dichos datos.
           </p>
         </div>
-        <div class="container">
-          <img
-            class="interfazux2"
-            src="f4_3.jpg"
-            alt=""
-            width="100"
-            height="90"
-          />
-          <p style="text-align: justify">
-            -Spyware: suelen venir como aplicaciones legitimas y termina
+        <div class="amenaza">
+          <img src="f4_3.jpg" alt="" class="amenaza_img" />
+          <p>
+            Spyware: suelen venir como aplicaciones legitimas y termina
             monitoreando los movimientos que se realizan en el dispositivo,
             registran información como mensajes de texto / SMS, URL visitadas,
             actividad de la aplicación, teclas presionadas, nombres de usuario y
@@ -97,89 +81,93 @@
             fue el virus Agent Smith.
           </p>
         </div>
-        <div class="container">
-          <img
-            class="interfazux2"
-            src="f4_4.png"
-            alt=""
-            width="100"
-            height="90"
-          />
-          <p style="text-align: justify">
+        <div class="amenaza">
+          <img src="f4_4.png" alt="" class="amenaza_img" />
+          <p>
             Gusanos: este es el tipo más perjudicial de virus para móviles
             Android. Los gusanos están diseñados para reproducirse
             continuamente. No se requiere interacción del usuario para la
             ejecución. Suelen llegar por SMS, MMS u otros medios digitales
           </p>
         </div>
-        <div class="container">
-          <img
-            class="interfazux2"
-            src="f4_5.jpg"
-            alt=""
-            width="100"
-            height="90"
-          />
-          <p style="text-align: justify">
-            -Troyanos: En 2015, algunos usuarios de Android fueron infectados
-            por un troyano dirigido a la banca que lograba interceptar mensajes
-            que incluían información financiera y enviaba una copia del mensaje
-            de texto por correo electrónico, lo cual proveyó a los
-            cibercriminales de toda la información que necesitaban para
-            infiltrarse en cuentas financieras.
+        <div class="amenaza">
+          <img src="f4_5.jpg" alt="" class="amenaza_img" />
+          <p>
+            Troyanos: En 2015, algunos usuarios de Android fueron infectados por
+            un troyano dirigido a la banca que lograba interceptar mensajes que
+            incluían información financiera y enviaba una copia del mensaje de
+            texto por correo electrónico, lo cual proveyó a los cibercriminales
+            de toda la información que necesitaban para infiltrarse en cuentas
+            financieras.
           </p>
         </div>
-        <br /><br />
-
-        <h2>Seguridad en Android 10</h2>
-        <br /><br />
-        <p style="text-align: justify">
-          Android 10 incluye varias funciones de seguridad como:
-          <br /><br />
-          -Autenticación biométrica: de versiones anteriores esta ha mejorado ya
+      </div>
+      <!-- SECCION 2  -->
+      <h2 class="title">Seguridad en Android 10</h2>
+      <p class="f4_desc">
+        Android 10 incluye varias funciones de seguridad como...
+      </p>
+      <div class="info info_cubes">
+        <p class="cube">
+          Autenticación biométrica: de versiones anteriores esta ha mejorado ya
           que se agregó una comprobación para la capacidad de autenticación
           biométrica, al igual que se agrego un mecanismo de resguardo en que no
           sea momento identificarte mediante biométrica puedas ingresar con un
           PIN, un patron o contraseña.
-          <br /><br />
-          -Ejecuta código DEX incorporado directamente desde un APK: A partir de
+        </p>
+        <p class="cube">
+          Ejecuta código DEX incorporado directamente desde un APK: A partir de
           la versión 10 de Android, es posible indicar al sistema para que
           ejecute el código DEX que se encuentra integrado directamente en el
           archivo APK de tu aplicación. Esta función puede ser beneficiosa para
           prevenir posibles ataques en caso de que un atacante haya logrado
           alterar el código previamente compilado en el dispositivo de forma
-          local. <br />
-          <br />
-          -Compatibilidad con TLS 1.3: La versión 10 de Android incorpora
-          soporte para TLS 1.3, que representa una significativa actualización
-          del protocolo TLS con mejoras en el rendimiento y la seguridad. Según
+          local.
+        </p>
+        <p class="cube">
+          Compatibilidad con TLS 1.3: La versión 10 de Android incorpora soporte
+          para TLS 1.3, que representa una significativa actualización del
+          protocolo TLS con mejoras en el rendimiento y la seguridad. Según
           nuestras pruebas comparativas, las conexiones seguras pueden
           establecerse hasta un 40% más rápido con TLS 1.3 en comparación con
-          TLS 1.2 <br />
-          <br />
-          -Parches de seguridad: se refieren a actualizaciones de seguridad que
+          TLS 1.2
+        </p>
+        <p class="cube">
+          Parches de seguridad: se refieren a actualizaciones de seguridad que
           Google y otros fabricantes de dispositivos Android incluyen:
           Corrección de vulnerabilidades, Actualización de componentes, Parches
           de Kernel y Protección contra amenazas actuales
-          <br /><br /><br />
+        </p>
+        <p class="cube">
           Análisis y solución de problemas en el sistema operativo, en el
           sistema de Android 10 se pueden usar diversas formas para hacer un
           análisis del sistema y encontrar solución si este se encuentra en un
-          estado crítico: <br /><br />
-          - Recopilar información: identificar cuando comenzaron los problemas y
-          cuales son, sistemas más lentos, mensajes de error, etc. <br />-
+          estado crítico:
+        </p>
+        <p class="cube">
+          Recopilar información: identificar cuando comenzaron los problemas y
+          cuales son, sistemas más lentos, mensajes de error, etc.
+        </p>
+        <p class="cube">
           Actualizaciones y parches: asegúrate de que el sistema operativo
           Android 10 esté actualizado con los últimos parches de seguridad y
-          actualizaciones de sistema disponibles. <br />- Registro y depuración:
-          Utiliza herramientas de registro y depuración, como Android Studio y
-          el Monitor de recursos, para analizar registros y detectar posibles
-          errores o problemas en tu aplicación <br />- Gestión de memoria:
-          Asegúrate de que tu aplicación administre correctamente la memoria y
-          los recursos del dispositivo para evitar bloqueos o ralentizaciones
-          <br />-Actualizar aplicación: verifica que tu sistema se encuentre en
-          la actualización correcta y las funciones que cumple esta.
+          actualizaciones de sistema disponibles.
+        </p>
+        <p class="cube">
+          Registro y depuración: Utiliza herramientas de registro y depuración,
+          como Android Studio y el Monitor de recursos, para analizar registros
+          y detectar posibles errores o problemas en tu aplicación
+        </p>
+        <p class="cube">
+          Gestión de memoria: Asegúrate de que tu aplicación administre
+          correctamente la memoria y los recursos del dispositivo para evitar
+          bloqueos o ralentizaciones
+        </p>
+        <p class="cube">
+          Actualizar aplicación: verifica que tu sistema se encuentre en la
+          actualización correcta y las funciones que cumple esta.
         </p>
       </div>
-    </center>
+    </div>
   </body>
 </html>

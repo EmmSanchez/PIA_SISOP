@@ -13,11 +13,6 @@
       rel="stylesheet"
     />
     <title>Fundamental 3</title>
-    <style>
-      body {
-        background-color: #2a8c4a;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -28,34 +23,34 @@
         <a href="Fundamntal3.html" class="link-active">Sección 3</a>
         <a href="Funtament4.html">Sección 4</a>
         <a href="Acercade.html">Acerca de</a>
-        <!-- <a
-          href="/archivos/Fundamentales_EQUIPO1.zip"
-          download="Fundamentales"
+      </nav>
+    </header>
+
+    <section class="section-download">
+      <div class="download-wrapper">
+        <h1>Descargar Fundamental 3</h1>
+        <a
+          href="/archivos/Actividad Fundamental 3.pdf"
+          download="Fundamental_3"
           class="download_button"
           ><span class="material-symbols-outlined download_icon">
             download </span
           >Descargar</a
-        > -->
-      </nav>
-    </header>
+        >
+      </div>
+    </section>
 
-    <center>
-      <div class="concurrencia">
-        <div class="seccion1">
-          <center>
-            <h1 class="titulo1">
-              Almacenaje, Memoria y Archivos en Android 10
-            </h1>
-          </center>
-        </div>
+    <div class="container">
+      <h1 class="title">Almacenaje, Memoria y Archivos en Android 10</h1>
 
-        <div class="seccion2 seccion2-f3">
-          <div>
-            <h1 class="titulo2">
+      <div>
+        <div class="container-hero_f3">
+          <div class="column-info_2">
+            <h1>
               ¿Qué tipos de memorias y sistemas de archivos manejan y cómo
               operan?
             </h1>
-            <p class="p2 p-edited" style="text-align: justify">
+            <p>
               Los dispositivos Android 10 cuentan con tres tipos de memoria:
               RAM, zRAM y de almacenamiento. La RAM es la más rápida pero tiene
               un tamaño limitado. Los dispositivos de alta gama suelen tener más
@@ -63,170 +58,184 @@
               intercambio. El almacenamiento contiene datos persistentes como el
               sistema de archivos y el código de aplicaciones.
             </p>
-            <img
-              src="img/f3_memory_types.svg"
-              alt="Tipos de memoria"
-              class="memory_types"
-            />
-
-            <h1 class="titulo3">Tipos de Memoria Caché</h1>
-            <ul class="list_text-s2">
-              <li>
-                <span class="bold">Privada:</span>
-                Propiedad de un proceso y no se comparte.
-              </li>
-              <li>
-                <span class="bold">Compartida:</span>
-                Utilizada por varios procesos.
-              </li>
-              <li>
-                <span class="bold">Anónima:</span>
-                No respaldada por un archivo en el almacenamiento.
-              </li>
-            </ul>
+          </div>
+          <img
+            src="img/f3_memory_types.svg"
+            alt="Tipos de memoria"
+            class="if3"
+          />
+        </div>
+        <h1 class="title">Tipos de Memoria Caché</h1>
+        <div class="types_wrapper">
+          <div class="types">
+            <p>
+              <span class="bold">Privada:</span>
+              Propiedad de un proceso y no se comparte.
+            </p>
+            <p>
+              <span class="bold">Compartida:</span>
+              Utilizada por varios procesos.
+            </p>
+            <p>
+              <span class="bold">Anónima:</span>
+              No respaldada por un archivo en el almacenamiento.
+            </p>
           </div>
         </div>
+      </div>
 
-        <div class="interfazusuario">
-          <div>
-            <h1 class="iuxtitle">Sistemas de Archivos en Android 10</h1>
-            <ul class="list_text">
-              <li>
-                <span class="bold">Almacenamiento Específico de la App:</span>
-                Para archivos exclusivos de la app.
-              </li>
-              <li>
-                <span class="bold">Almacenamiento Compartido:</span>
-                Para archivos que la app comparte con otras.
-              </li>
-              <li>
-                <span class="bold">Preferencias:</span>
-                Para datos primitivos y privados en pares clave-valor.
-              </li>
-              <li>
-                <span class="bold">Bases de Datos:</span>
-                Para datos estructurados en una base de datos privada.
-              </li>
-            </ul>
+      <div class="container">
+        <div class="archivos">
+          <div class="archivos_info">
+            <p>
+              <span class="bold">Almacenamiento Específico de la App:</span>
+              Para archivos exclusivos de la app.
+            </p>
+            <p>
+              <span class="bold">Almacenamiento Compartido:</span>
+              Para archivos que la app comparte con otras.
+            </p>
+            <p>
+              <span class="bold">Preferencias:</span>
+              Para datos primitivos y privados en pares clave-valor.
+            </p>
+            <p>
+              <span class="bold">Bases de Datos:</span>
+              Para datos estructurados en una base de datos privada.
+            </p>
+            <img src="img/f3_system_files.svg" />
           </div>
-          <img class="interfazux" src="img/f3_system_files.svg" />
+          <h1 class="title archivos_title">
+            Sistemas de Archivos en Android 10
+          </h1>
         </div>
+      </div>
 
-        <div class="api">
-          <h1 class="apititle">Operación de los archivos</h1>
-          <p class="p5 p-edited" style="text-align: justify">
+      <div class="cubes">
+        <div class="cube">
+          <h1 class="cube-title">Operación de los archivos</h1>
+          <p>
             Cada archivo y directorio en el sistema tiene permisos de acceso que
             determinan quién puede leer, escribir o ejecutarlos.
           </p>
         </div>
-
-        <div class="composicion">
-          <h1 class="compotitle">Tipos de Sistemas de Archivos</h1>
-          <ul class="list_text-s2">
+        <div class="cube">
+          <h1 class="cube-title">Tipos de Sistemas de Archivos</h1>
+          <ul>
             <li>
-              <span class="bold">EXT4 (Extended File System): </span>
+              <span>EXT4 (Extended File System): </span>
               Maneja grandes volúmenes de datos y archivos. Es óptimo para
               discos duros de alta capacidad y velocidad, y cuenta con
               características avanzadas de seguridad y recuperación de datos.
             </li>
             <li>
-              <span class="bold">VFAT:</span>
+              <span>VFAT:</span>
               Utilizado en algunos dispositivos Android 10 para formatear
               almacenamiento externo, como una tarjeta SD. Permite almacenar
               archivos de más de 4GB.
             </li>
           </ul>
         </div>
+      </div>
 
-        <div class="composicion composicion-1">
-          <h1 class="compotitle">
-            Importancia de la Administración de Memoria en Dispositivos Android
-            10
-          </h1>
-          <br />
-          <ul class="list_text-circle">
-            <li>
-              <span class="bold">Rendimiento del Sistema:</span>
-              Asegura operación rápida y fluida.
-            </li>
-            <li>
-              <span class="bold"
-                >Multitarea y Rendimiento de Aplicaciones:
-              </span>
-              Permite ejecutar múltiples aplicaciones eficientemente.
-            </li>
-            <li>
-              <span class="bold">Optimización de Recursos: </span>
-              Adapta el sistema a diferentes capacidades de hardware.
-            </li>
-            <li>
-              <span class="bold">Evitar Cierres Inesperados: </span>
-              Previene cierres forzados de aplicaciones.
-            </li>
-            <li>
-              <span class="bold">Prevención de Agotamiento de Recursos: </span>
-              Evita errores y bloqueos por falta de memoria.
-            </li>
-            <li>
-              <span class="bold">Ahorro de Energía: </span>
-              Optimiza el consumo de batería.
-            </li>
-          </ul>
+      <div class="container">
+        <div class="container-hero_f3">
+          <div class="column-info">
+            <h1>
+              Importancia de la Administración de Memoria en Dispositivos
+              Android 10
+            </h1>
+            <div class="info">
+              <p class="cube cube-gray">
+                <span class="bold">Rendimiento del Sistema:</span>
+                Asegura operación rápida y fluida.
+              </p>
+              <p class="cube cube-gray">
+                <span class="bold"
+                  >Multitarea y Rendimiento de Aplicaciones:
+                </span>
+                Permite ejecutar múltiples aplicaciones eficientemente.
+              </p>
+              <p class="cube cube-gray">
+                <span class="bold">Optimización de Recursos: </span>
+                Adapta el sistema a diferentes capacidades de hardware.
+              </p>
+              <p class="cube cube-gray">
+                <span class="bold">Evitar Cierres Inesperados: </span>
+                Previene cierres forzados de aplicaciones.
+              </p>
+              <p class="cube cube-gray">
+                <span class="bold"
+                  >Prevención de Agotamiento de Recursos:
+                </span>
+                Evita errores y bloqueos por falta de memoria.
+              </p>
+              <p class="cube cube-gray">
+                <span class="bold">Ahorro de Energía: </span>
+                Optimiza el consumo de batería.
+              </p>
+            </div>
+          </div>
           <img
             src="img/f3_memory_admin.jpg"
             alt="Administración de memoria"
-            class="memory_admin"
-          />
-        </div>
-
-        <br /><br /><br />
-        <div class="composicion">
-          <h1 class="compotitle">
-            Problemas Comunes en la Administración de Memoria
-          </h1>
-          <ul class="list_text-s2">
-            <li>
-              <span class="bold">Falta de Memoria (Out of Memory):</span>
-              Insuficiente RAM para las aplicaciones.
-            </li>
-            <li>
-              <span class="bold">Fugas de Memoria (Memory Leaks): </span>
-              No se libera memoria no utilizada.
-            </li>
-            <li>
-              <span class="bold"
-                >Exceso de Consumo de RAM por Aplicaciones:</span
-              >
-              Aplicaciones mal optimizadas
-            </li>
-            <li>
-              <span class="bold"
-                >Ciclo de Vida Inadecuado de Aplicaciones:</span
-              >
-              Aplicaciones consumen recursos innecesarios en segundo plano.
-            </li>
-            <li>
-              <span class="bold">Problemas con la Gestión de la Caché:</span>
-              Uso ineficiente de la memoria caché.
-            </li>
-            <li>
-              <span class="bold">Conflicto entre Aplicaciones:</span>
-              Competencia por los mismos recursos de memoria.
-            </li>
-            <li>
-              <span class="bold"
-                >Problemas con Versiones de Android y Dispositivos Variados:
-              </span>
-              Comportamientos diferentes según la versión y hardware.
-            </li>
-          </ul>
-          <img
-            src="img/f3_memory_problems.webp"
-            alt="RAM Degradada"
-            class="memory_problems"
+            class="memory"
           />
         </div>
       </div>
-    </center>
+
+      <div class="container">
+        <div class="container_problems">
+          <img
+            src="img/f3_memory_problems.webp"
+            alt="RAM Degradada"
+            class="memory"
+          />
+          <div class="column-info">
+            <h1>Problemas Comunes en la Administración de Memoria</h1>
+            <div>
+              <div class="info">
+                <p class="cube">
+                  <span class="bold">Falta de Memoria (Out of Memory):</span>
+                  Insuficiente RAM para las aplicaciones.
+                </p>
+                <p class="cube">
+                  <span class="bold">Fugas de Memoria (Memory Leaks): </span>
+                  No se libera memoria no utilizada.
+                </p>
+                <p class="cube">
+                  <span class="bold"
+                    >Exceso de Consumo de RAM por Aplicaciones:</span
+                  >
+                  Aplicaciones mal optimizadas
+                </p>
+                <p class="cube">
+                  <span class="bold"
+                    >Ciclo de Vida Inadecuado de Aplicaciones:</span
+                  >
+                  Aplicaciones consumen recursos innecesarios en segundo plano.
+                </p>
+                <p class="cube">
+                  <span class="bold"
+                    >Problemas con la Gestión de la Caché:</span
+                  >
+                  Uso ineficiente de la memoria caché.
+                </p>
+                <p class="cube">
+                  <span class="bold">Conflicto entre Aplicaciones:</span>
+                  Competencia por los mismos recursos de memoria.
+                </p>
+                <p class="cube">
+                  <span class="bold"
+                    >Problemas con Versiones de Android y Dispositivos Variados:
+                  </span>
+                  Comportamientos diferentes según la versión y hardware.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -13,11 +13,6 @@
       rel="stylesheet"
     />
     <title>Fundamental 2</title>
-    <style>
-      body {
-        background-color: #2a8c4a;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -28,58 +23,57 @@
         <a href="Fundamntal3.html">Sección 3</a>
         <a href="Funtament4.html">Sección 4</a>
         <a href="Acercade.html">Acerca de</a>
-        <!-- <a
-          href="/archivos/Fundamentales_EQUIPO1.zip"
-          download="Fundamentales"
+      </nav>
+    </header>
+
+    <section class="section-download">
+      <div class="download-wrapper">
+        <h1>Descargar Fundamental 2</h1>
+        <a
+          href="/archivos/Fundamental2_E2_SISOP.pdf"
+          download="Fundamental_2"
           class="download_button"
           ><span class="material-symbols-outlined download_icon">
             download </span
           >Descargar</a
-        > -->
-      </nav>
-    </header>
-    <center>
-      <div class="concurrencia">
-        <div class="seccion1">
-          <center>
-            <h1>¿Cómo ocurre la concurrencia dentro de Android 10?</h1>
-          </center>
-        </div>
-        <p style="text-align: justify">
-          Dentro del sistema operativo Android 10, la concurrencia se logra a
-          través de varias técnicas y herramientas que permiten la ejecución
-          simultánea de múltiples tareas, lo que es fundamental para mantener
-          una experiencia de usuario fluida y receptiva en dispositivos móviles.
-          En Android, existen varios tipos de concurrencia que se utilizan para
-          ejecutar tareas de manera simultánea o en segundo plano.
-          <br />
-          <br />
-          Hilos (Threads): Android 10, como todas las versiones anteriores de
-          Android, utiliza hilos para permitir la ejecución simultánea de
-          tareas. Los hilos son unidades de ejecución que permiten que varias
-          partes del código se ejecuten de manera independiente. estos son la
-          forma más básica de concurrencia en Android y cualquier otro sistema
-          operativo.
-          <br />
-          <br />
-          <img class="interfazux2" src="F2_1.png" width="170" , height="350" />
-          <br />
-          <br />
+        >
+      </div>
+    </section>
 
+    <div class="container">
+      <h1>¿Cómo ocurre la concurrencia dentro de Android 10?</h1>
+      <div class="container-info">
+        <div class="info-text">
+          <p>
+            Dentro del sistema operativo Android 10, la concurrencia se logra a
+            través de varias técnicas y herramientas que permiten la ejecución
+            simultánea de múltiples tareas, lo que es fundamental para mantener
+            una experiencia de usuario fluida y receptiva en dispositivos
+            móviles. En Android, existen varios tipos de concurrencia que se
+            utilizan para ejecutar tareas de manera simultánea o en segundo
+            plano.
+            <br />
+            <br />
+            Hilos (Threads): Android 10, como todas las versiones anteriores de
+            Android, utiliza hilos para permitir la ejecución simultánea de
+            tareas. Los hilos son unidades de ejecución que permiten que varias
+            partes del código se ejecuten de manera independiente. estos son la
+            forma más básica de concurrencia en Android y cualquier otro sistema
+            operativo.
+          </p>
+        </div>
+        <img src="F2_1.png" class="container-image" />
+      </div>
+
+      <div class="grid">
+        <p class="grid-paragraph">
           Para evitar condiciones de carrera y problemas de concurrencia,
           Android utiliza mecanismos como cerrojos (locks), semáforos y
           sincronización de hilos.
-          <img src="semaforo.png" width="40" , height="30" />
-          <br />
-          <br />
-          <center>
-            <img class="interfazux3" src="R.gif" width="400" , height="200" />
-          </center>
-          <br />
-          <br />
         </p>
-
-        <p style="text-align: justify">
+        <img src="semaforo.png" class="grid-image" />
+        <img src="R.gif" class="grid-image" />
+        <p class="grid-paragraph">
           Android 10 se basa en la gestión de hilos, para lograr su concurrencia
           utiliza sistemas para administrar y distribuir tareas en múltiples
           hilos, cual su función es determinar qué hilo se ejecuta en un momento
@@ -88,258 +82,221 @@
           experiencia de usuario fluida y rápida.. Por ejemplo, el hilo
           principal se encarga de la interfaz de usuario, mientras que otros
           hilos pueden manejar operaciones en segundo plano.
-          <br />
-          <br />
         </p>
       </div>
+    </div>
 
-      <div class="concurrencia">
-        <br />
-        <center><h2>Tipos de concurrencia</h2></center>
-        <br />
-        <br />
-        <p style="text-align: justify">
-          Android 10 y sus versiones anteriors hereda muchos de los principios y
-          técnicas de concurrencia que son comunes en sistemas operativos
-          modernos, A continuación, veremos algunos tipos de concurrencia que
-          son aplicables al contexto Android.
-          <br />
-          <br />
-          1.- Concurrencia de hilos
-          <br />
-          Android 10, como todas las versiones de Android, reiterando, permite
-          la creación y gestión de hilos para realizar tareas concurrentes. Sin
-          embargo, se recomienda utilizar APIs modernas como
-          java.util.concurrent y android.os.Handler para facilitar la
-          administración de hilos.
-          <br />
-          <br />
-          2.- Concurrencia a nivel de procesos
-          <br />
-          En Android, cada aplicación se ejecuta en su propio proceso. No
-          necesitas gestionar esto directamente, ya que Android se encarga de
-          ello. Sin embargo, puedes interactuar con otros procesos a través de
-          IPC.
-          <br />
-          <br />
-          3.- Concurrencia a nivel de tarea
-          <br />
-          Por ejemplo, puedes utilizar AsyncTask para realizar una tarea en
-          segundo plano y actualizar la interfaz de usuario.
-          <br />
-          <br />
-          4.- Concurrencia a nivel de instrucción
-          <br />
-          Esto es manejado a nivel de hardware y no requiere intervención
-          directa del desarrollador de aplicaciones.
-          <br />
-          <br />
-          5.- Concurrencia a nivel de datos Puedes utilizar Executor o
-          ThreadPoolExecutor para ejecutar tareas en paralelo, por ejemplo, para
-          procesar una lista de datos.
-          <br />
-          <br />
-          6.- Concurrencia a nivel de eventos Esto es una parte fundamental de
-          Android. Por ejemplo, para responder a un clic de botón, puedes usar
-          un OnClickListener.
-          <br />
-          <br />
-        </p>
-      </div>
-
-      <div class="concurrencia">
-        <br />
-        <center><h2>¿Cómo se crean los hilos?</h2></center>
-        <br />
-        <br />
-        <p style="text-align: justify">
-          Los hilos pueden crearse directamente utilizando la clase Thread, pero
-          también se pueden utilizar clases como AsyncTask o HandlerThread para
-          facilitar su gestión.
-          <br />
-          <br />
-        </p>
-        <div class="contenedor2">
-          <div class="carta2">
-            <div class="contenido">
-              <h3>•AsyncTask</h3>
-              <p class="parrafo" style="text-align: justify">
-                Ha sido desaconsejada en versiones más recientes de Android, y
-                se recomienda el uso de bibliotecas y patrones más modernos como
-                ViewModel junto con Coroutines o RxJava. Sin embargo te permite
-                realizar trabajos asíncronos en la interfaz de usuario. Realiza
-                las operaciones de bloqueo en un subproceso de trabajo y, luego,
-                publica los resultados en el subproceso de IU sin que debas
-                administrar los subprocesos o controladores
-              </p>
-            </div>
-          </div>
-        </div>
-        <img src="AsyncTask.png" />
-        <br />
-        <br />
-        <div class="contenedor2">
-          <div class="carta2">
-            <div class="contenido">
-              <h3>•Executor framewor</h3>
-              <p class="parrafo" style="text-align: justify">
-                Android 10 utiliza con frecuncia Executor framework, que
-                proporciona una forma más eficiente de administrar la ejecución
-                de hilos y tareas. Puedes usar Executors para crear pools de
-                hilos y ejecutar tareas de manera concurrente.Basicamente es
-                bjeto que ejecuta las tareas enviadas. Éste proporciona una
-                forma de desacoplar el envío de tareas de la interfaz Mecánica
-                de cómo se ejecutará cada tarea, incluidos los detalles del hilo
-                uso
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="contenedor2">
-          <div class="carta2">
-            <div class="contenido">
-              <h3>•Coroutines (Kotlin)</h3>
-              <p class="parrafo" style="text-align: justify">
-                En Android 10, las coroutines de Kotlin han ganado popularidad
-                como una forma más sencilla y estructurada de manejar la
-                concurrencia. En Android, las corrutinas ayudan a administrar
-                tareas de larga duración que, de lo contrario, podrían bloquear
-                el subproceso principal y hacer que tu app dejara de responder
-                Las funciones más importantes son las siguientes:
-
-                <br />
-                • Ligereza
-                <br />
-                • Menos fugas de memoria
-                <br />
-                • Integración con Jetpack
-                <br />
-                <br />
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="contenedor2">
-          <div class="carta2">
-            <div class="contenido">
-              <h3>•Handler y Looper</h3>
-              <p class="parrafo" style="text-align: justify">
-                Un Handler es un objeto que permite programar y ejecutar código
-                en un hilo específico. Se utiliza para comunicarse entre hilos y
-                para programar tareas para su ejecución en el futuro. El Looper
-                permite que un hilo procese mensajes en una cola. Los mensajes
-                son objetos que contienen instrucciones que el hilo debe
-                ejecutar.
-                <br />
-                Estas mismas siguen siendo componentes fundamentales en Android
-                10 para la administración de tareas asíncronas y la comunicación
-                entre hilos. Sin embargo, se recomienda explorar y utilizar
-                técnicas de concurrencia más modernas
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="contenedor2">
-          <div class="carta2">
-            <div class="contenido">
-              <h3>•RxJava</h3>
-              <p class="parrafo" style="text-align: justify">
-                Se utiliza para trabajar con flujos de datos y eventos
-                asincrónicos. Es especialmente popular en el desarrollo de
-                aplicaciones Android debido a su capacidad para gestionar la
-                concurrencia y la complejidad de las operaciones asíncronas de
-                manera más estructurada y legible.
-              </p>
-            </div>
-          </div>
-        </div>
-        <img class="interfazux6" src="RxJava.jpg" width="300" height="150" />
-
-        <div class="concurrencia">
-          <br />
-          <center>
-            <h2>Ventajas y desventajas de la ejecución de concurrencia</h2>
-          </center>
-        </div>
-        <center>
-          <div class="contenedor2">
-            <div class="carta3">
-              <div class="contenido">
-                <h3>Pros</h3>
-                <p class="parrafo" style="text-align: justify">
-                  Mayor rendimiento y utilización de recursos.<br />
-                  Mejora de la capacidad de respuesta en aplicaciones
-                  interactivas.<br />
-                  Capacidad para realizar tareas largas en segundo plano sin
-                  <br />bloquear la interfaz de usuario.
-                </p>
-              </div>
-            </div>
-          </div>
-        </center>
-        <center>
-          <div class="contenedor2">
-            <div class="carta3">
-              <div class="contenido">
-                <h3>Contras</h3>
-                <p class="parrafo" style="text-align: justify">
-                  Mayor complejidad en el diseño y la depuración.<br />
-                  Posibles problemas de sincronización y condiciones de carrera.
-                  <br />
-                  Consumo adicional de memoria y recursos del sistema.<br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </center>
-
-        <div class="concurrencia">
-          <br />
-          <center><h2>Servicios, proceso y manejos de recursos</h2></center>
-          <br />
-          <br />
-          <p class="parrafo" style="text-align: justify">
-            Las actividades dentro del sistema operativo Android tienen su
-            propio ciclo de vida. Pueden estar en primer plano (son enfocadas y
-            visibles para el usuario), en segundo plano (solo están en
-            ejecución, pero no son visibles por el usuario) o en estado inactivo
-            (fuera de la vista pero mantienen su estado). Esto permite a
-            múltiples actividades coexistir y responder según sus estados.
+    <div class="container">
+      <div class="container-info">
+        <h2 class="list-title">Tipos de concurrencia</h2>
+        <div class="list">
+          <p>
+            <span class="bold">
+              Android 10 y sus versiones anteriores hereda muchos de los
+              principios y técnicas de concurrencia que son comunes en sistemas
+              operativos modernos, A continuación, veremos algunos tipos de
+              concurrencia que son aplicables al contexto Android.
+            </span>
             <br />
             <br />
-            Aquí es donde servicios en Android juegan un rol importante, estos
-            son componentes que pueden ejecutarse en segundo plano, incluso
-            cuando la aplicación no está en primer plano. Esto permite que
-            ciertas tareas continúen ejecutándose, como por ejemplo la
-            reproducción de música o la actualización de notificaciones.
+            1.- <span class="bold">Concurrencia de hilos</span>
             <br />
             <br />
-            <center>
-              <img
-                class="interfazux7"
-                src="barra.jpg"
-                width="300"
-                height="150"
-              />
-            </center>
+            Android 10, como todas las versiones de Android, reiterando, permite
+            la creación y gestión de hilos para realizar tareas concurrentes.
+            Sin embargo, se recomienda utilizar APIs modernas como
+            java.util.concurrent y android.os.Handler para facilitar la
+            administración de hilos.
             <br />
             <br />
-          </p>
-
-          <p class="parrafo" style="text-align: justify">
-            Para poder ser capaces de realizar esto Android gestiona los
-            recursos del sistema (como CPU, memoria y red) utilizando políticas
-            de prioridad y restricciones. Por ejemplo, las tareas en primer
-            plano generalmente tienen prioridad sobre las tareas en segundo
-            plano para garantizar una respuesta rápida del usuario y evitar
-            problemas de gestión.
+            2.- <span class="bold">Concurrencia a nivel de procesos</span>
+            <br />
+            <br />
+            En Android, cada aplicación se ejecuta en su propio proceso. No
+            necesitas gestionar esto directamente, ya que Android se encarga de
+            ello. Sin embargo, puedes interactuar con otros procesos a través de
+            IPC.
+            <br />
+            <br />
+            3.- <span class="bold">Concurrencia a nivel de tarea</span>
+            <br />
+            <br />
+            Por ejemplo, puedes utilizar AsyncTask para realizar una tarea en
+            segundo plano y actualizar la interfaz de usuario.
+            <br />
+            <br />
+            4.- <span class="bold">Concurrencia a nivel de instrucción</span>
+            <br />
+            <br />
+            Esto es manejado a nivel de hardware y no requiere intervención
+            directa del desarrollador de aplicaciones.
+            <br />
+            <br />
+            5.- <span class="bold">Concurrencia a nivel de datos</span>
+            <br />
+            <br />
+            Puedes utilizar Executor o ThreadPoolExecutor para ejecutar tareas
+            en paralelo, por ejemplo, para procesar una lista de datos.
+            <br />
+            <br />
+            6.- <span class="bold">Concurrencia a nivel de eventos</span>
+            <br />
+            <br />
+            Esto es una parte fundamental de Android. Por ejemplo, para
+            responder a un clic de botón, puedes usar un OnClickListener.
             <br />
             <br />
           </p>
         </div>
       </div>
-    </center>
+    </div>
+
+    <div class="container">
+      <div class="container-column">
+        <div class="column-info">
+          <h2 class="">¿Cómo se crean los hilos?</h2>
+          <p class="left">
+            Los hilos pueden crearse directamente utilizando la clase Thread,
+            pero también se pueden utilizar clases como AsyncTask o
+            HandlerThread para facilitar su gestión.
+          </p>
+        </div>
+      </div>
+
+      <div class="cubes">
+        <!-- cube 1 -->
+        <div class="cube">
+          <h3 class="cube-title">• AsyncTask</h3>
+          <p>
+            Ha sido desaconsejada en versiones más recientes de Android, y se
+            recomienda el uso de bibliotecas y patrones más modernos como
+            ViewModel junto con Coroutines o RxJava. Sin embargo te permite
+            realizar trabajos asíncronos en la interfaz de usuario. Realiza las
+            operaciones de bloqueo en un subproceso de trabajo y, luego, publica
+            los resultados en el subproceso de IU sin que debas administrar los
+            subprocesos o controladores
+          </p>
+        </div>
+        <!-- cube 2 -->
+        <div class="">
+          <img src="AsyncTask.png" class="cube-image" />
+        </div>
+        <!-- cube 3 -->
+        <div class="cube">
+          <h3 class="cube-title">• Executor framewor</h3>
+          <p>
+            Android 10 utiliza con frecuencia Executor framework, que
+            proporciona una forma más eficiente de administrar la ejecución de
+            hilos y tareas. Puedes usar Executors para crear pools de hilos y
+            ejecutar tareas de manera concurrente.Basicamente es bjeto que
+            ejecuta las tareas enviadas. Éste proporciona una forma de
+            desacoplar el envío de tareas de la interfaz Mecánica de cómo se
+            ejecutará cada tarea, incluidos los detalles del hilo uso
+          </p>
+        </div>
+        <!-- cube 4 -->
+        <div class="cube">
+          <h3 class="cube-title">• Coroutines (Kotlin)</h3>
+          <p>
+            En Android 10, las coroutines de Kotlin han ganado popularidad como
+            una forma más sencilla y estructurada de manejar la concurrencia. En
+            Android, las corrutinas ayudan a administrar tareas de larga
+            duración que, de lo contrario, podrían bloquear el subproceso
+            principal y hacer que tu app dejara de responder Las funciones más
+            importantes son las siguientes:
+            <br />
+            • Ligereza
+            <br />
+            • Menos fugas de memoria
+            <br />
+            • Integración con Jetpack
+            <br />
+            <br />
+          </p>
+        </div>
+        <!-- cube 5 -->
+        <div class="cube">
+          <h3 class="cube-title">• Handler y Looper</h3>
+          <p>
+            Un Handler es un objeto que permite programar y ejecutar código en
+            un hilo específico. Se utiliza para comunicarse entre hilos y para
+            programar tareas para su ejecución en el futuro. El Looper permite
+            que un hilo procese mensajes en una cola. Los mensajes son objetos
+            que contienen instrucciones que el hilo debe ejecutar.
+            <br />
+            Estas mismas siguen siendo componentes fundamentales en Android 10
+            para la administración de tareas asíncronas y la comunicación entre
+            hilos. Sin embargo, se recomienda explorar y utilizar técnicas de
+            concurrencia más modernas
+          </p>
+        </div>
+        <!-- cube 6 -->
+        <div class="cube">
+          <h3 class="cube-title">• RxJava</h3>
+          <p>
+            Se utiliza para trabajar con flujos de datos y eventos asincrónicos.
+            Es especialmente popular en el desarrollo de aplicaciones Android
+            debido a su capacidad para gestionar la concurrencia y la
+            complejidad de las operaciones asíncronas de manera más estructurada
+            y legible.
+          </p>
+        </div>
+      </div>
+
+      <img src="RxJava.jpg" class="java-image" />
+
+      <div>
+        <h2 class="title">
+          Ventajas y desventajas de la ejecución de concurrencia
+        </h2>
+      </div>
+      <div class="comparacion">
+        <div class="square">
+          <h3>Pros</h3>
+          <p>
+            Mayor rendimiento y utilización de recursos.<br />
+            Mejora de la capacidad de respuesta en aplicaciones interactivas.<br />
+            Capacidad para realizar tareas largas en segundo plano sin
+            <br />bloquear la interfaz de usuario.
+          </p>
+        </div>
+        <div class="square">
+          <h3>Contras</h3>
+          <p>
+            Mayor complejidad en el diseño y la depuración.<br />
+            Posibles problemas de sincronización y condiciones de carrera.
+            <br />
+            Consumo adicional de memoria y recursos del sistema.<br />
+          </p>
+        </div>
+      </div>
+
+      <div class="services">
+        <h2 class="title">Servicios, proceso y manejos de recursos</h2>
+        <p class="left padding bg-main">
+          Las actividades dentro del sistema operativo Android tienen su propio
+          ciclo de vida. Pueden estar en primer plano (son enfocadas y visibles
+          para el usuario), en segundo plano (solo están en ejecución, pero no
+          son visibles por el usuario) o en estado inactivo (fuera de la vista
+          pero mantienen su estado). Esto permite a múltiples actividades
+          coexistir y responder según sus estados.
+          <br />
+          <br />
+          Aquí es donde servicios en Android juegan un rol importante, estos son
+          componentes que pueden ejecutarse en segundo plano, incluso cuando la
+          aplicación no está en primer plano. Esto permite que ciertas tareas
+          continúen ejecutándose, como por ejemplo la reproducción de música o
+          la actualización de notificaciones.
+          <br />
+          <br />
+          Para poder ser capaces de realizar esto Android gestiona los recursos
+          del sistema (como CPU, memoria y red) utilizando políticas de
+          prioridad y restricciones. Por ejemplo, las tareas en primer plano
+          generalmente tienen prioridad sobre las tareas en segundo plano para
+          garantiza
+        </p>
+        <img src="barra.jpg" class="services-image" />
+      </div>
+    </div>
   </body>
 </html>
